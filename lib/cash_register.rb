@@ -11,7 +11,6 @@ class CashRegister
   
   def add_item(item, price)
     self.total += price
-    item >= 1
   end
     
 end
