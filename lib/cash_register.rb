@@ -14,7 +14,7 @@ class CashRegister
   def add_item(items, price, amount = 1)
     self.total += price * amount
     amount.times do 
-      @items << amount
+      items << amount
     end
     self.final_transaction = price * amount
   end
@@ -28,8 +28,11 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
-
   
+  def items
+    @items = items
+  end
+
   def void_last_transaction
     self.total = self.total - self.final_transaction
   end
