@@ -16,7 +16,6 @@ class CashRegister
     amount.times do 
       item << amount
     end
-    self.final_transaction = price * amount
   end
   
   def apply_discount
