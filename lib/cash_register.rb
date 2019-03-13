@@ -15,5 +15,9 @@ class CashRegister
       item << amount
     end
   end
+  
+  def apply_discount
+    self.total -= @discount
+  end
     
 end
