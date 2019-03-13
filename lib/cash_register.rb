@@ -15,7 +15,7 @@ class CashRegister
     self.final_transaction = price * amount
   end
   
-  def apply_discount
+  def apply_discount(price)
      if @discount
        self.discount = (price * discount)/100
        @total -= self.discount
