@@ -26,8 +26,6 @@ class CashRegister
     @total -= @total * @discount / 100
     return "After the discount, the total comes to $#{@total}."
   end 
-    end
-  end
   
   def void_last_transaction
     self.total = self.total - self.final_transaction
