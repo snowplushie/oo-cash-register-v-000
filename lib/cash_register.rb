@@ -7,6 +7,10 @@ class CashRegister
     @items = []
   end
   
+  def items
+    @items
+  end
+  
   def total
     self.total = @total
   end
@@ -27,10 +31,6 @@ class CashRegister
     else
       return "There is no discount to apply."
     end
-  end
-  
-  def items
-    @items
   end
 
   def void_last_transaction
